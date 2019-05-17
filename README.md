@@ -19,15 +19,6 @@ The code is available under the ./lib directory and is split in modules allowing
 
 And example could be the segmentationReductionCalculator which could be extract as a micro-service when the logic would become more complex. 
 
-
-• Object oriented programming approach, provide a high level UML class diagram of 
-all the key classes in your solution. This can either be on paper or using a CASE tool
-• Unit tests to achieve good code coverage, good use of Mocking
-• Code to be generic and simple
-• Leverage today's best coding practices
-• Clear README.md that explains how the code and the test can be run and how the
-coverage reports can be generated
-
 ## Installation & Usage
 
 

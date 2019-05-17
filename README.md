@@ -1,6 +1,7 @@
 # code sample project
 
 [![Build Status](https://travis-ci.org/plaenen/code-sample.svg?branch=master)](https://travis-ci.org/plaenen/code-sample)
+[![codecov](https://codecov.io/gh/plaenen/code-sample/branch/master/graph/badge.svg)](https://codecov.io/gh/plaenen/code-sample)
 
 This is a code-sample which required the following functionality
 

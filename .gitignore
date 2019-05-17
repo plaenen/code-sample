@@ -44,3 +44,7 @@ node_modules/
 
 # JSDOC
 out
+
+#code coverage
+.nyc_output
+coverage

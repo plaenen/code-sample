@@ -115,3 +115,25 @@ test('should give 0% reduction for customers with a loyalty < 2 years', (assert)
   assert.isEqual(result.reduction, expected, '$' + result.reduction + ' reduction applied');
   assert.end();
 });
+
+test('should give no reduction when no rules are given', (assert) => {
+  const given = {
+    userProfile: {
+      userSegment: userSegment.EMPLOYEE,
+      loyalSince: moment().subtract(2, 'years').subtract(1, 'day'), // 2 years and 1 day
+    },
+    amount: {
+      grandTotal: 100,
+      GROCERY: 50,
+    },
+    segmentationRules: null,
+  };
+
+  const expected = 0;
+
+  let result = segmentReductionCalculator(given.userProfile, given.amount, given.segmentationRules);
+  console.log('result: ', result);
+  displayResult(result);
+  assert.isEqual(result.reduction, expected, '$' + result.reduction + ' reduction applied');
+  assert.end();
+});

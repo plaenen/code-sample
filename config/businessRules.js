@@ -1,5 +1,5 @@
 
-var productCategory = require('./../lib/productCategories');
+var productCategory = require('./../lib/services/productCategories');
 
 /**
  * Business rules configuration

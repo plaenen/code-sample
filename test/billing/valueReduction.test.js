@@ -1,5 +1,5 @@
 const test = require('tape');
-const valueReductionCalculator = require('../../lib/billing/valueReductionCalculator');
+const valueReductionCalculator = require('../../lib/services/billing/valueReductionCalculator');
 const displayResult = require('./../utils/displayTestResults');
 
 test('should give 5$ reduction per $100 on the bill', function(assert) {

@@ -1,9 +1,9 @@
 const test = require('tape');
 const moment = require('moment');
 
-const billCalculator = require('./../../lib/billing');
-const userSegment = require('./../../lib/userSegments');
-const productCategory = require('./../../lib/productCategories');
+const billCalculator = require('./../../lib/services/billing');
+const userSegment = require('./../../lib/services/userSegments');
+const productCategory = require('./../../lib/services/productCategories');
 const displayResult = require('./../utils/displayTestResults');
 
 test('should give 5$ reduction and an additional 30% employee reduction', function(assert) {

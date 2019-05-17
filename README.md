@@ -14,7 +14,7 @@ On a retail website, the following discounts apply:
 6. A user can get only one of the percentage based discounts on a bill.
 
 Traditionally in programming languages like Java, Python an OOP style approach would be taken.
-However in NodeJs this would be an ant-pattern, hence the usage of as much as possible pure functions without side-effect. 
+However in NodeJs this would be an ant-pattern, hence the usage of a more standard javascript approach, there is room for improvement, but that was not the key goal of this coding sample. 
 
 The code is available under the ./lib directory and is split in modules allowing us to extract those modules in the future as separate micro-services if required. 
 
@@ -37,13 +37,28 @@ node v10.10.0  or higher [download](https://nodejs.org/en/download/)
 
 npm install
 
-4. running the test to understand the capabilities
-```
-npm test
-```
-
-5. run the application 
+4. run the application 
 
 ```
 npm start
 ```
+
+
+
+
+
+## Continuous integration
+
+We use [travis-ci](https://travis-ci.org/plaenen/code-sample) as Continuous integration tool and the build status can be found in the badge on top of this page. 
+
+During the build we test: 
+
+* Unit tests, which can be executed locally as following:
+
+```
+  npm run test 
+```
+
+
+
+

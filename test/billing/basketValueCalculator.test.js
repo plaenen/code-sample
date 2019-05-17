@@ -1,6 +1,6 @@
 const test = require('tape');
-const basketValueCalculator = require('../../lib/billing/basketValueCalculator');
-const ProductCategory = require('./../../lib/productCategories');
+const basketValueCalculator = require('../../lib/services/billing/basketValueCalculator');
+const ProductCategory = require('./../../lib/services/productCategories');
 const displayResult = require('./../utils/displayTestResults');
 
 test('should calculate value of groceries in a total bill', (assert) => {

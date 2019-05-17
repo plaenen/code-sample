@@ -1,0 +1,10 @@
+{
+  "extends": "strongloop",
+  "plugins": [ "babel" ],
+  "parser": "babel-eslint",
+  "rules": {
+      "no-invalid-this": 0,
+      "babel/no-invalid-this": 1,
+      "max-len": [2, 120, 4, {"ignoreUrls": true}]   
+  }
+}

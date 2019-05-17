@@ -44,6 +44,8 @@
     "check-coverage"
   ],
   "dependencies": {
+    "apollo-server": "^2.5.0",
+    "graphql": "^14.3.0",
     "moment": "^2.24.0"
   },
   "engines": {

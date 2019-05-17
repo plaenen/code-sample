@@ -33,9 +33,10 @@ test('should calculate value of groceries in a total bill', (assert) => {
   displayResult(result);
 
   // Ensure the grand-total is correct
-  assert.isEqual(result.grandTotal, expected.grandTotal);
+  assert.isEqual(result.grandTotal, expected.grandTotal, 'basket total value is $' + result.grandTotal);
   // Ensure the total for per product category only is correct
-  assert.isEqual(result[ProductCategory.GROCERY], expected.groceries);
-  assert.isEqual(result[ProductCategory.OTHER], expected.other);
+  assert.isEqual(result[ProductCategory.GROCERY], expected.groceries,
+    'total value for grocery products is $' + result.GROCERY);
+  assert.isEqual(result[ProductCategory.OTHER], expected.other, 'total value for other products is $' + result.OTHER);
   assert.end();
 });

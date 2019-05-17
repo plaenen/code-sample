@@ -26,7 +26,9 @@ test('should give 5$ reduction per $100 on the bill', function(assert) {
   fixtures.forEach((fixture) => {
     let result = valueReductionCalculator(fixture.given, valueReduction);
     displayResult(result);
-    assert.isEqual(result.reduction, fixture.expected);
+    let assertDescription = 'no reduction applied on amount $' + fixture.given;
+    if (result.reduction > 0) assertDescription = result.description;
+    assert.isEqual(result.reduction, fixture.expected, assertDescription);
   });
 
   assert.end();

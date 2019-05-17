@@ -28,7 +28,7 @@ test('should give 30% reduction for employees on non-grocery products', (assert)
 
   let result = segmentReductionCalculator(given.userProfile, given.amount, given.segmentationRules);
   displayResult(result);
-  assert.isEqual(result.reduction, expected);
+  assert.isEqual(result.reduction, expected, '$' + result.reduction + ' reduction applied');
   assert.end();
 });
 
@@ -56,7 +56,7 @@ test('should give 10% reduction for affiliates on non-grocery products', (assert
   let result = segmentReductionCalculator(given.userProfile, given.amount, given.segmentationRules);
   displayResult(result);
 
-  assert.isEqual(result.reduction, expected);
+  assert.isEqual(result.reduction, expected, '$' + result.reduction + ' reduction applied');
   assert.end();
 });
 
@@ -84,7 +84,7 @@ test('should give 5% reduction for customers with a loyalty > 2 years', (assert)
   let result = segmentReductionCalculator(given.userProfile, given.amount, given.segmentationRules);
   displayResult(result);
 
-  assert.isEqual(result.reduction, expected);
+  assert.isEqual(result.reduction, expected, '$' + result.reduction + ' reduction applied');
   assert.end();
 });
 
@@ -112,6 +112,6 @@ test('should give 0% reduction for customers with a loyalty < 2 years', (assert)
   let result = segmentReductionCalculator(given.userProfile, given.amount, given.segmentationRules);
   displayResult(result);
 
-  assert.isEqual(result.reduction, expected);
+  assert.isEqual(result.reduction, expected, '$' + result.reduction + ' reduction applied');
   assert.end();
 });

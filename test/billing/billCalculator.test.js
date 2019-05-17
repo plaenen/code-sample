@@ -50,7 +50,7 @@ test('should give 5$ reduction and an additional 30% employee reduction', functi
   let result = billCalculator.getPayableAmount(given.userProfile, given.basket, given.businessRules);
   displayResult(result);
 
-  assert.isEqual(result.payableAmount, expected);
+  assert.isEqual(result.payableAmount, expected, 'total payable amount is $' + result.payableAmount);
   assert.end();
 });
 
@@ -103,6 +103,6 @@ test('should give 5$ reduction and an additional 10% Affiliate reduction', funct
   let result = billCalculator.getPayableAmount(given.userProfile, given.basket, given.businessRules);
   displayResult(result);
 
-  assert.isEqual(result.payableAmount, expected);
+  assert.isEqual(result.payableAmount, expected, 'total payable amount is $' + result.payableAmount);
   assert.end();
 });

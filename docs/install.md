@@ -26,7 +26,7 @@ npm start
 npm test
 ```
 
-![unit-tests](./unit-tests.png)
+![unit-tests](./img/unit-tests.png)
 
 ## Code Coverage
 
@@ -39,7 +39,7 @@ And a visual representation under ./coverage/lcov-report
 
 Remark: Further improvement to be done to get overall test coverage reporting in place. 
 
-![code-coverage](./code-coverage.png)
+![code-coverage](./img/code-coverage.png)
 
 ## Linting
 

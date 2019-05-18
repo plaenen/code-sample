@@ -49,4 +49,54 @@ see [Documentation](./docs/readme.md) for more details and screen-shots of the s
 * [ ] ...
 
 
+## Using the graphql editor
+
+* Browse to [http://127.0.0.1:4000/graphql](http://127.0.0.1:4000/graphql)
+* Add the following query
+
+```
+query ($userId: String!) {
+  user(id:$userId) {
+    id
+    userProfile {
+      segment
+      userSince
+    }
+    basket {
+      products{
+        productType
+        amount
+      },
+      priceBreakdown{
+        payableAmount
+        totalAmount
+        totalReductions
+        reductions {
+          amount
+          description
+        }
+      }
+    }
+  }
+}
+```
+
+* And the following query variables
+
+```
+{
+  "userId": "1"
+}
+```
+
+* Now run the query
+
+The following mocked users are available
+
+0. Employee (userId = 0)
+1. Affiliate (userId = 1)
+2. Customer with more than 2 years loyalty (userId = 2)
+3. Customer wiht less than 2 years loyalty (userId = 3)
+
+
 

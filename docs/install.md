@@ -12,7 +12,9 @@ node v10.10.0  or higher [download](https://nodejs.org/en/download/)
 
 3. install dependencies
 
+```
 npm install
+```
 
 4. run the application 
 

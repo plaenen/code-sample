@@ -1,9 +1,9 @@
 const test = require('tape');
 const moment = require('moment');
-const segmentReductionCalculator = require('../../lib/services/billing/segmentReductionCalculator');
-const userSegment = require('./../../lib/services/userSegments');
-const productCategory = require('./../../lib/services/productCategories');
-const displayResult = require('./../utils/displayTestResults');
+const segmentReductionCalculator = require('./../../../lib/services/billing/segmentReductionCalculator');
+const userSegment = require('./../../../lib/services/userSegments');
+const productCategory = require('./../../../lib/services/productCategories');
+const displayResult = require('./../../utils/displayTestResults');
 
 test('should give 30% reduction for employees on non-grocery products', (assert) => {
   const given = {

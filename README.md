@@ -19,6 +19,7 @@ On a retail website, the following discounts apply:
 
 Traditionally in programming languages like Java, Python an OOP style approach would be taken.
 However in this sample takes a more standard javascript approach. Which will evolve through time. 
+(OOP sample in tests [userClass](./lib/services/user/userClass.js))
 
 >Working software is the primary measure of progress. 
 >~~ [Agile manifesto principle](https://agilemanifesto.org/principles.html)

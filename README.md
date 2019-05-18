@@ -13,60 +13,36 @@ On a retail website, the following discounts apply:
 5. The percentage based discounts do not apply on groceries.
 6. A user can get only one of the percentage based discounts on a bill.
 
+![graphql-client](./docs/img/graphql-client.png)
+
 Traditionally in programming languages like Java, Python an OOP style approach would be taken.
-However in NodeJs this would be an ant-pattern, hence the usage of a more standard javascript approach, there is room for improvement, but that was not the key goal of this coding sample. 
+However in this sample takes a more standard javascript approach. Which will evolve through time. 
 
-The code is available under the ./lib directory and is split in modules allowing us to extract those modules in the future as separate micro-services if required. 
+>Working software is the primary measure of progress. 
+>~~ [Agile manifesto principle](https://agilemanifesto.org/principles.html)
 
-All services in the /lib/service folder can be split if required in microservice
-as well as the individual services in the /lib/services/billing folder.
-Loose coupling in code is crucial to avoid monolithic applications. 
+Therefore I focused on getting it working, then go through continuous improvement. This allows us to iterate without making big upfront designs. 
 
-see [screenshots](./docs/screenshots.md) for the graphql ui, with some samples.
+* Code is available under the [./lib](./lib) folder
+* Test under [./test](./test) 
 
-## Installation & Usage
+The code is structured in a way that it can easily be split in different micro-services. 
+Each of the [./lib/services](./lib/services) could be split off when the project grows or scaling requirements might justify splitting parts off. 
 
-1. clone the repository 
+see [Documentation](./docs/readme.md) for more details and screen-shots of the solution
 
-```
-git clone https://github.com/plaenen/code-sample.git
-```
-
-2. install pre-requisites
-
-node v10.10.0  or higher [download](https://nodejs.org/en/download/)
-
-3. install dependencies
-
-npm install
-
-4. run the application 
-
-```
-npm start
-```
-
-## Continuous integration
-
-We use [travis-ci](https://travis-ci.org/plaenen/code-sample) as Continuous integration tool and the build status can be found in the badge on top of this page. 
-
-During the build we test: 
-
-* Unit tests, which can be executed locally as following:
-
-```
-  npm run test 
-```
+* [Installing and running the application](./docs/install.md)
+* [Continuous Integration](./docs/ci-cd.md)
 
 ## What's next
 
 * [ ] build integration test
 * [ ] provide proper JSDOCS
 * [ ] automatic deploy to AWS
-* [ ] harden to code, exception handling etc 
-* [ ] ensure node remains running pm2?
-* [ ] remove mock services and implement them
-* [ ] security, login with OAuth?
+* [ ] harden to code to make it production ready, exception handling etc 
+  * [ ] ensure node remains running pm2?
+  * [ ] remove mock services and implement them
+  * [ ] security, login with OAuth?
 * [ ] improve code coverage
 * [ ] ...
 

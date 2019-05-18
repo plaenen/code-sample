@@ -1,18 +1,6 @@
-# Screenshots
+__Index__
 
-GraphQL Sample
-
-![graphql-sample](./code-sample-graphql.png)
-
-Unit Tests
-
-![unit tests](./unit-tests.png)
-
-Code Coverage
-
-![code coverage](./code-coverage.png)
-
-
-CI 
-
-![CI](./travis-ci.png)
+* [install and run](./install.md)
+* [application details and architecture](./application-details.md)
+* [continuous integration](./ci-cd.md)
+* JSDOCS (todo)

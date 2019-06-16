@@ -11,7 +11,7 @@
     "lint-fix": "eslint --ignore-path .gitignore . --fix",
     "codecov": "npm run cover:unit && npm run cover:report",
     "cover:unit": "node_modules/.bin/nyc --silent npm run test:unit",
-    "cover:report": "node_modules/.bin/nyc report --reporter=lcov --reporter=text",
+    "cover:report": "node_modules/.bin/nyc report --reporter=lcov --reporter=text --reporter=cobertura",
     "jsdoc": "jsdoc ./lib/**/*.js",
     "check-coverage": "c8 --check-coverage --lines 100 npm test",
     "start": "node lib/server.js"

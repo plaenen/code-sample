@@ -14,9 +14,16 @@ steps:
   inputs:
     versionSpec: '10.x'
   displayName: 'Install Node.js'
-
 - script: |
-    npm install
-    npm run lint
+    npm install 
     npm run cover:unit
-  displayName: 'npm install and build'
+  displayName: 'npm install'
+- task: NodeTool@0
+  displayName: Linting
+- script: |
+     npm run lint
+- task: NodeTool@0
+  displayName: Unit Tests
+- script: |
+     npm run test
+  

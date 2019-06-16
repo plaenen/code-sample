@@ -36,7 +36,7 @@ steps:
     failTaskOnFailedTests: true
 - script: |
     npm run codecov
-    displayName: 'Code coverage'
+  displayName: 'Code coverage'
 - task: PublishCodeCoverageResults@1
   inputs:
     codeCoverageTool: 'Cobertura'

@@ -30,7 +30,6 @@ steps:
     displayName: 'Unit testing'
 - task: PublishTestResults@2
   inputs:
-    testResultsFormat: 'NUnit'
-    testResultsFiles: '**/TEST-*.xml'
+    testResultsFormat: 'JUnit'
+    testResultsFiles: 'output/test/*.xml'
     failTaskOnFailedTests: true
-  

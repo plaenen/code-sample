@@ -48,3 +48,6 @@ out
 #code coverage
 .nyc_output
 coverage
+
+#test results
+output

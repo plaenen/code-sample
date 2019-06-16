@@ -31,5 +31,7 @@ steps:
 - task: PublishTestResults@2
   inputs:
     testResultsFormat: 'JUnit'
-    testResultsFiles: 'output/test/*.xml'
+    testResultsFiles: '**/output/test/*.xml'
+    mergeTestResults: true
     failTaskOnFailedTests: true
+

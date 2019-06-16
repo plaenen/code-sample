@@ -27,7 +27,7 @@ steps:
   displayName: 'linting'
 - script: |
     npm run test
-    displayName: 'Unit testing'
+  displayName: 'Unit testing'
 - task: PublishTestResults@2
   inputs:
     testResultsFormat: 'JUnit'

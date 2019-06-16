@@ -39,7 +39,7 @@ steps:
   displayName: 'Code coverage'
 - task: PublishCodeCoverageResults@1
   inputs:
-    codeCoverageTool: 'Cobertura'
+    codeCoverageTool: 'JaCoCo'
     summaryFileLocation: 'coverage/locv.info'
     reportDirectory: '**/coverage/lcov-report'
 

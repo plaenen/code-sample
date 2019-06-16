@@ -38,8 +38,8 @@ steps:
     npm run codecov
   displayName: 'Code coverage'
 - task: PublishCodeCoverageResults@1
-  inputs:
-    codeCoverageTool: 'Cobertura'
-    summaryFileLocation: 'coverage/cobertura-coverage.xml'
-    reportDirectory: '**/coverage/lcov-report'
+  inputs: 
+    codeCoverageTool: Cobertura
+    summaryFileLocation: '$(System.DefaultWorkingDirectory)/**/*coverage.xml'
+    reportDirectory: '$(System.DefaultWorkingDirectory)/**/coverage'
 

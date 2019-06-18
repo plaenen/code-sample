@@ -3,6 +3,8 @@
 [![Build Status](https://travis-ci.org/plaenen/code-sample.svg?branch=master)](https://travis-ci.org/plaenen/code-sample)
 [![codecov](https://codecov.io/gh/plaenen/code-sample/branch/master/graph/badge.svg)](https://codecov.io/gh/plaenen/code-sample)
 
+[![Build Status](https://dev.azure.com/plaenen0600/code-sample/_apis/build/status/code-sample-CI?branchName=master)](https://dev.azure.com/plaenen0600/code-sample/_build/latest?definitionId=2&branchName=master)
+
 This is a code-sample which required the following functionality
 
 On a retail website, the following discounts apply:
